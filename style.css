@@ -18,6 +18,13 @@ body {
   width: 350px;
   text-align: center;
 }
+.container div {
+  display: flex;
+  justify-content: space-between;
+}
+.container div button {
+  margin-left: 10px
+}
 
 /* Heading */
 h2 {
