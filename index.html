@@ -9,11 +9,16 @@
   <body>
     <div class="container">
       <h2>To-Do List</h2>
-      <div>
+      <div class="containerAdd">
         <input type="text" id="taskInput" placeholder="Add a new task" />
         <button onclick="addTask()">Add</button>
       </div>
+
+      <h3>Pending Tasks</h3>
       <ul id="taskList"></ul>
+
+      <h3>Completed Tasks</h3>
+      <ul id="completedTasks"></ul>
     </div>
 
     <script src="./script.js"></script>
