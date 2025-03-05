@@ -1,40 +1,112 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f4f4f4;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  margin: 0;
 }
+
+/* Container Styling */
 .container {
   background: white;
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
 }
+
+/* Heading */
+h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Input and Button */
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #ff7e5f;
+}
+
+button {
+  background: #ff7e5f;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff3e50;
+}
+
+/* To-Do List Styling */
 ul {
   list-style: none;
   padding: 0;
+  margin-top: 15px;
 }
+
 li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #e0e0e0;
-  margin: 5px 0;
+  background: #fff3e0;
+  margin: 8px 0;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
 }
+
+li:hover {
+  transform: scale(1.02);
+}
+
+/* Completed Task */
 .completed {
   text-decoration: line-through;
   color: gray;
 }
+
+/* Edit Input Field */
 .edit-input {
   display: none;
   width: 60%;
+  border: 2px solid #ddd;
+  padding: 5px;
+  border-radius: 3px;
 }
-button {
-  margin-left: 5px;
-  cursor: pointer;
+
+/* Buttons */
+li button {
+  background: #f39c12;
+  padding: 5px 8px;
+  font-size: 12px;
+}
+
+li button:hover {
+  background: #e67e22;
+}
+
+li button:last-child {
+  background: #e74c3c;
+}
+
+li button:last-child:hover {
+  background: #c0392b;
 }
